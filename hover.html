@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+        h1 {
+            color: red;
+        }
+
+        h1::after {
+            content: ' Tag';
+            color: blueviolet;
+        }
+
+        h1::before {
+            content: 'Hello! ';
+        }
+
+        h1:hover {
+            /* color: black;
+            font-size: 50px; */
+        }
+
+        input {
+            color: brown;
+        }
+
+        #special:focus {
+            color: blueviolet;
+        }
+
+        a:visited {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is Heading</h1>
+    <h1>This is Heading</h1>
+    <h1>This is Heading</h1>
+    <h1>This is Heading</h1>
+    <input type="text">
+    <input id="special" type="text">
+    <input type="text">
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://acronyms.thefreedictionary.com/SMNV">Never Visited</a>
+</body>
+
+</html>
